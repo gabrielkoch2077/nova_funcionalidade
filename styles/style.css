@@ -20,7 +20,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, 0.9);
-    color: white;
+    color: rgb(241, 241, 241);
     padding: 1.5rem;
     border-radius: 10px;
     width: 90%;
@@ -110,12 +110,14 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
     .quiz-overlay {
-        padding: 1.2rem;
+        padding: 1.5rem;
+        margin-top: 2.15rem;
     }
 
     .quiz-option {
         padding: 12px;
     }
 }
+
