@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="../styles/style.css">
 </head>
+
 <body class="bg-gray-100">
   <header class="bg-white shadow fixed top-0 left-0 right-0 z-50">
     <div class="max-w-6xl mx-auto px-4 py-2 flex items-center justify-between">
@@ -20,7 +22,8 @@
         </div>
       </div>
       <div class="hidden md:flex items-center w-full max-w-lg mx-4">
-        <input type="text" placeholder="Pesquisar algo legal..." class="w-full border border-gray-300 rounded-l-full px-4 py-2 focus:outline-none focus:border-red-500">
+        <input type="text" placeholder="Pesquisar algo legal..."
+          class="w-full border border-gray-300 rounded-l-full px-4 py-2 focus:outline-none focus:border-red-500">
         <button class="bg-gray-100 border border-l-0 border-gray-300 rounded-r-full px-4">
           <i class="fas fa-search text-gray-600"></i>
         </button>
@@ -34,30 +37,33 @@
   <main class="pt-20 px-4 max-w-5xl mx-auto">
     <div class="bg-white rounded-xl shadow mb-8">
       <div class="video-container">
-        <iframe id="videoPlayer" src="https://www.youtube.com/embed/dQw4w9WgXcQ?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+        <iframe id="videoPlayer" src="https://www.youtube.com/embed/dQw4w9WgXcQ?enablejsapi=1" frameborder="0"
+          allowfullscreen></iframe>
         <div class="quiz-overlay" id="quizOverlay">
-          <h2 class="text-lg font-bold mb-4">Qual é a capital do Brasil?</h2>
+          <h2 id="text-lg font-bold mb-4">Qual é a capital do Brasil?</h2>
           <div class="quiz-options">
             <div class="quiz-option" onclick="checkAnswer(this, 'correct')">Brasília</div>
             <div class="quiz-option" onclick="checkAnswer(this, 'incorrect')">Rio de Janeiro</div>
             <div class="quiz-option" onclick="checkAnswer(this, 'incorrect')">São Paulo</div>
             <div class="quiz-option" onclick="checkAnswer(this, 'incorrect')">Manaus</div>
           </div>
-          <button id="continueBtn" class="mt-4 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded hidden" onclick="continueVideo()">Bora continuar 🎥</button>
+
         </div>
       </div>
 
       <div class="p-4">
         <h1 class="text-2xl font-bold mb-2">Como programar em JavaScript</h1>
         <div class="flex items-center gap-4">
-          <img src="https://yt3.ggpht.com/ytc/AMLnZu_o3JXHceST1oEug=s88-c-k-c0x00ffffff-no-rj" class="channel-avatar" alt="Canal">
+          <img src="https://yt3.ggpht.com/ytc/AMLnZu_o3JXHceST1oEug=s88-c-k-c0x00ffffff-no-rj" class="channel-avatar"
+            alt="Canal">
           <div>
             <h3 class="font-bold">CodeTube Jr.</h3>
             <p class="text-sm text-gray-500">999K inscritos</p>
           </div>
-          <button class="ml-auto bg-black text-white rounded-full px-4 py-1 hover:bg-gray-800">Inscreva-se</button>
+          <button class="ml-auto bg-black text-white rounded-full px-4 py-1 hover:bg-gray-800" style = "display: block;" id = "buttonInscrito" onclick="inscreverSe()">Inscreva-se</button>
         </div>
-        <p class="text-sm text-gray-700 mt-4">Nesse vídeo, eu falo tudo o que queria ter ouvido quando comecei a programar! Tem umas dicas que salvam muito, tipo o que focar no início e onde aprender sem gastar 💸</p>
+        <p class="text-sm text-gray-700 mt-4">Nesse vídeo, eu falo tudo o que queria ter ouvido quando comecei a
+          programar! Tem umas dicas que salvam muito, tipo o que focar no início e onde aprender sem gastar 💸</p>
       </div>
     </div>
   </main>
@@ -97,4 +103,5 @@
     }
   </script>
 </body>
+
 </html>
